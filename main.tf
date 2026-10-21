@@ -27,7 +27,6 @@ resource "aws_iam_role" "this" {
   description           = var.description
   max_session_duration  = var.max_session_duration
   permissions_boundary  = var.permissions_boundary
-  managed_policy_arns   = var.managed_policy_arns
 
   tags = local.tags
 }
